@@ -39,18 +39,18 @@ class CreditCard:
 
     def validate(self, expiration_date, holder, cvc):
         card_data = {"number": self.card_number, "expiration": expiration_date, "holder": holder, "cvc": cvc}
-        if  card_data in df_cards:
+        if card_data in df_cards:
             return True
         else:
             return False
 
-
+print(df)
 hotel_ID = input("Enter the id of the hotel: ")
 hotel = Hotel(hotel_ID)
 
 if hotel.available():
-    credit_card = CreditCard(card_number='123456789', expiration_date="12/13", name="Tim Ber", cvc="123")
-    if credit_card.validate():
+    credit_card = CreditCard(card_number='123456789')
+    if credit_card.validate( expiration_date="12/13", holder="Tim Ber", cvc="123"):
         hotel.book()
         name = input("Enter your Name: ")
         reservation = Reservation(name, hotel)

@@ -1,4 +1,8 @@
 id,name,city,capacity,available
-134,Tourist Sunny Apartment,Anchorage,4,yes
-188,Snow Palace,New Delhi,5,no
-655,City Break Inn,Porto-Novo,3,no
+134,Four Seasons,Minneapolis,454,yes
+188,The Saint Paul Hotel,St. Paul,145,no
+655,Drury Plaza,St. Paul,75,yes
+255,DoubleTree by Hilton,St. Paul,259,no
+365,Millennium,Minneapolis,445,yes
+
+
